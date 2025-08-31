@@ -93,9 +93,9 @@ body:
     id: config-details
     attributes:
       label: "Configuration Details"
-      description: "Provide the specific configuration or installation command for your MCP server"
+      description: "Provide the specific configuration for your MCP server"
       placeholder: |
-        Example configuration:
+        Example configuration (you can provide multiple configuration methods):
         {
           "mcpServers": {
             // uvx
