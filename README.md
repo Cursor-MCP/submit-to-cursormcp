@@ -1,20 +1,176 @@
-# 🎉 Submit To cursormcp.net 🚀
+# 🚀 Submit to CURSOR MCP
 
-欢迎您为 [你的导航站名] 提交新的网站资源！
+Welcome to the official submission repository for [CURSOR MCP](https://cursormcp.net) - the premier marketplace for MCP (Model Context Protocol) servers!
 
-## 如何提交？
+## 🌟 About CURSOR MCP
 
-1.  点击上方的 [Issues] 标签页。
-2.  点击绿色的 [New issue] 按钮。
-3.  选择适合的模板（例如：**「提交新网站」**），并填写所需信息。
-4.  点击 [Submit new issue] 即可。我们会在审核后尽快处理！
+CURSOR MCP is a comprehensive marketplace that helps developers discover, share, and integrate MCP servers for enhanced AI assistant capabilities. Our platform showcases high-quality, open-source MCP servers across various categories to empower the AI development community.
 
-## 提交规范
+## 📋 How to Submit Your MCP Server
 
-为了帮助我们高效处理，请确保您的提交包含以下信息：
-- **网站名称：**
-- **网址（URL）：**
-- **分类：** （例如：工具、设计、学习...）
-- **简介：** 一句话描述这个网站是做什么的。
+We welcome submissions of high-quality, open-source MCP servers! Follow these simple steps:
 
-感谢您的贡献！
+1. **Click** the [Issues] tab above
+2. **Select** "New issue" 
+3. **Choose** the "🚀 Submit New MCP Server" template
+4. **Fill out** all required information carefully
+5. **Submit** your issue - our team will review and process it promptly!
+
+## ✅ Submission Requirements
+
+To ensure quality and usability, your MCP server must meet these criteria:
+
+### **Essential Requirements**
+- ✅ **Open Source**: Must have an open-source license
+- ✅ **Documentation**: Comprehensive README with clear installation and usage instructions
+- ✅ **Functionality**: Fully functional and tested MCP server
+- ✅ **Maintenance**: Actively maintained repository
+
+### **Required Information**
+When submitting, please provide:
+
+- **Name**: Your MCP server's name
+- **Description**: Clear explanation of functionality and features
+- **Repository URL**: Link to your open-source repository
+- **Category**: Select from our predefined categories
+- **Configuration**: Complete MCP server configuration details
+- **Glama Link** (optional): If listed on Glama platform
+
+### **Configuration Format**
+Provide your MCP server configuration in the standard format:
+
+#### uvx
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "uvx",
+      "args": ["your-mcp-server-package"]
+    }
+  }
+}
+```
+
+#### docker
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "your-docker-image"]
+    }
+  }
+}
+```
+
+#### npm
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "npx",
+      "args": ["-y", "your-mcp-server-package"]
+    }
+  }
+}
+```
+
+#### Python
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "python",
+      "args": ["-m", "your_mcp_server_module"]
+    }
+  }
+}
+```
+
+#### Node.js
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "node",
+      "args": ["/path/to/your/server.js"]
+    }
+  }
+}
+```
+
+#### Binary Executable
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "/path/to/your/executable",
+      "args": ["--option1", "value1"]
+    }
+  }
+}
+```
+
+#### Environment Variables (Optional)
+```json
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "uvx",
+      "args": ["your-mcp-server-package"],
+      "env": {
+        "API_KEY": "your-api-key",
+        "DEBUG": "true"
+      }
+    }
+  }
+}
+```
+
+
+## 🏷️ Categories
+
+We organize MCP servers into the following categories:
+
+- **Developer Tools** - Code execution, version control, testing
+- **Productivity** - File management, automation, project management
+- **Data Science Tools** - Data analysis, visualization, ML tools
+- **Communication** - Chat, email, collaboration tools
+- **Cloud Platforms** - AWS, Azure, GCP integrations
+- **Databases** - Database connections and management
+- **Security** - Authentication, encryption, security tools
+- And many more...
+
+## 🔄 Review Process
+
+1. **Submission**: Submit via GitHub issue template
+2. **Review**: Our team reviews for quality and compliance
+3. **Testing**: We verify documentation
+4. **Approval**: Approved servers are added to cursormcp.net
+5. **Publication**: Your MCP server goes live on the marketplace!
+
+## 🤝 Contributing Guidelines
+
+- Ensure your MCP server follows [MCP protocol standards](https://modelcontextprotocol.io/)
+- Include comprehensive documentation and examples
+- Test your server thoroughly before submission
+- Maintain your repository and respond to issues
+- Follow semantic versioning for updates
+
+## 📞 Support
+
+Need help with your submission? 
+
+- 📧 Create an issue in this repository
+- 🌐 Visit [cursormcp.net](https://cursormcp.net) for more information
+- 📚 Check out the [MCP documentation](https://modelcontextprotocol.io/)
+
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE).
+
+---
+
+**Thank you for contributing to the MCP ecosystem!** 🎉
+
+Together, we're building a vibrant community of AI-powered tools and services.
