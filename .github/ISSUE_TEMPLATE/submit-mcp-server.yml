@@ -1,0 +1,140 @@
+name: "🚀 Submit New MCP Server"
+description: "Submit a new MCP server resource to cursormcp.net"
+title: "[Submission]: "
+labels: ["submission", "to-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your submission! Please fill out the following information to help us review your MCP server.
+        
+        **Requirements:**
+        - Must be open source
+        - Must have a good README with clear documentation
+        - Repository should be actively maintained
+        
+  - type: input
+    id: name
+    attributes:
+      label: "MCP Server Name"
+      description: "The name of your MCP server"
+      placeholder: "e.g., File Manager MCP"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Describe what your MCP server does and its key features"
+      placeholder: "This MCP server provides comprehensive file management capabilities including reading, writing, and organizing files..."
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: "Repository URL"
+      description: "Link to the open source repository (GitHub, GitLab, etc.)"
+      placeholder: "https://github.com/username/mcp-server-name"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      description: "Select the most appropriate category for your MCP server"
+      options:
+        - "Agentic Intelligence"
+        - "Aggregators"
+        - "Art & Culture"
+        - "Automation"
+        - "Blockchain"
+        - "Blockchain & Web3"
+        - "Browser Automation"
+        - "Calendar Management"
+        - "Cloud Platforms"
+        - "Code Execution"
+        - "Command Line"
+        - "Communication"
+        - "Customer Data Platforms"
+        - "Data Platforms"
+        - "Data Science Tools"
+        - "Databases"
+        - "Developer Tools"
+        - "E-commerce"
+        - "Embedded System"
+        - "Entertainment & Media"
+        - "File Systems"
+        - "Finance & Fintech"
+        - "Health & Wellness"
+        - "Healthcare"
+        - "Healthcare & Life Sciences"
+        - "Knowledge & Memory"
+        - "Location Services"
+        - "Marketing"
+        - "Monitoring"
+        - "Os Automation"
+        - "Other Tools and Integrations"
+        - "Productivity"
+        - "Productivity Tools"
+        - "Project Management"
+        - "Robotics"
+        - "Search"
+        - "Security"
+        - "Testing"
+        - "Travel & Transportation"
+        - "Version Control"
+    validations:
+      required: true
+
+  - type: textarea
+    id: config-details
+    attributes:
+      label: "Configuration Details"
+      description: "Provide the specific configuration or installation command for your MCP server"
+      placeholder: |
+        Example configuration:
+        {
+          "mcpServers": {
+            // uvx
+            "git": {
+              "command": "uvx",
+              "args": ["mcp-server-git"]
+            },
+            // docker
+            "git": {
+              "command": "docker",
+              "args": [
+                "run",
+                "--rm",
+                "-i",
+                "--mount", "type=bind,src=${workspaceFolder},dst=/workspace",
+                "mcp/git"
+              ]
+            }
+          }
+        }
+    validations:
+      required: true
+
+  - type: input
+    id: glama-link
+    attributes:
+      label: "Glama MCP Server Link (Optional)"
+      description: "If your MCP server is listed on Glama, please provide the link"
+      placeholder: "https://glama.ai/mcp/servers/your-server-name"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: "Submission Requirements"
+      description: "Please confirm that your submission meets the following requirements:"
+      options:
+        - label: "My MCP server is open source"
+          required: true
+        - label: "The repository has a comprehensive README with installation and usage instructions"
+          required: true

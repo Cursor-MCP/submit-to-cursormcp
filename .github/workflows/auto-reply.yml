@@ -1,0 +1,44 @@
+name: Auto Reply to MCP Server Submissions
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    
+    steps:
+      - name: Add auto reply comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = `🎉 **Thank you for submitting your MCP Server!**
+
+            Hello! Thank you very much for submitting your MCP Server resource to cursormcp.net.
+
+            📋 **Review Process:**
+            - Our team will complete the review within **1-3 business days**
+            - During the review, we will check if your MCP Server meets our quality standards
+            - If we have any questions or need additional information, we will communicate with you in this issue
+
+            ✅ **Review Criteria:**
+            - Open source project with good code quality
+            - Complete README documentation with clear installation and usage instructions
+            - Actively maintained project
+            - Accurate configuration information
+
+            If your submission passes the review, we will add it to the [cursormcp.net](https://cursormcp.net) website.
+
+            Thank you again for your contribution! If you have any questions, please feel free to leave a comment in this issue.
+
+            ---
+            *This message was sent by an automated system*`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            }); 
