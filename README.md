@@ -1,10 +1,10 @@
-# 🚀 Submit to CURSOR MCP
+# 🚀 Submit to cursormcp.net
 
-Welcome to the official submission repository for [CURSOR MCP](https://cursormcp.net) - the premier marketplace for MCP (Model Context Protocol) servers!
+Welcome to the official submission repository for [cursormcp.net](https://cursormcp.net) - the premier marketplace for MCP (Model Context Protocol) servers!
 
-## 🌟 About CURSOR MCP
+## 🌟 About cursormcp.net
 
-CURSOR MCP is a comprehensive marketplace that helps developers discover, share, and integrate MCP servers for enhanced AI assistant capabilities. Our platform showcases high-quality, open-source MCP servers across various categories to empower the AI development community.
+cursormcp.net is a comprehensive marketplace that helps developers discover, share, and integrate MCP servers for enhanced AI assistant capabilities. Our platform showcases high-quality, open-source MCP servers across various categories to empower the AI development community.
 
 ## 📋 How to Submit Your MCP Server
 
